@@ -1,2 +1,3 @@
-import { handlers } from "@/root/auth.config" // Referring to the auth.ts we just created
+import { handlers } from '@/infrastructure/persistance/session/auth'
+
 export const { GET, POST } = handlers

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 
-import '@/styles/globals.css'
-import { cn } from '@/lib/utils'
-import { fontSans } from '@/lib/fonts'
-import { siteConfig } from '@/config/site'
+import '@/app/_styles/globals.css'
+import { fontSans } from '@/app/_lib/fonts'
+import { siteConfig } from '@/app/_config/site'
+import { cn } from '@/app/_lib/utils/cn'
 
 export const metadata: Metadata = {
   title: {

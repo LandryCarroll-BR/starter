@@ -1,7 +1,7 @@
-import NextAuth from 'next-auth'
+import { NextAuthConfig } from 'next-auth'
 import GoogleProvider from 'next-auth/providers/google'
 
-export const { handlers, signIn, signOut, auth } = NextAuth({
+export default {
   providers: [
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID,
@@ -9,4 +9,4 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       allowDangerousEmailAccountLinking: true,
     }),
   ],
-})
+} satisfies NextAuthConfig
